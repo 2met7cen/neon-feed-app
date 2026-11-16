@@ -1,0 +1,29 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Pull latest code
+        run: |
+          cd ~/neon-feed-app
+          git pull origin main
+
+      - name: Build Docker image
+        run: |
+          cd ~/neon-feed-app
+          docker build -t neon-feed .
+
+      - name: Stop and remove old container
+        run: |
+          docker stop neon-feed || true
+          docker rm neon-feed || true
+
+      - name: Run new container
+        run: |
+          docker run -d --name neon-feed -p 8080:80 neon-feed
