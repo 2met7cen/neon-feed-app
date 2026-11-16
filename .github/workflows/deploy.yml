@@ -27,3 +27,5 @@ jobs:
       - name: Run new container
         run: |
           docker run -d --name neon-feed -p 8080:80 neon-feed
+      - name: Clean up old images
+        run: docker image prune -f
