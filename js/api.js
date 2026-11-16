@@ -24,7 +24,7 @@ export function persistFeed(state) {
 
 export function createMessage({ author, text }) {
   return {
-    id: crypto.randomUUID(),
+    id: (crypto.randomUUID?.() ?? 'msg-' + Date.now() + '-' + Math.random().toString(36).slice(2)),
     author,
     text,
     createdAt: new Date().toISOString(),
