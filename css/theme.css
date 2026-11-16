@@ -1,0 +1,16 @@
+:root {
+  /* палитра киберпанк / кавбой бибоп */
+  --bg-0: #05010d;
+  --bg-1: #0b0320;
+  --neon-pink: #ff2e97;
+  --neon-cyan: #00f0ff;
+  --neon-yellow: #ffd60a;
+  --neon-purple: #9d4edd;
+  --text-main: #e6e6ff;
+  --text-dim: #8a8ab0;
+  --panel-bg: rgba(15, 5, 35, 0.65);
+  --panel-border: rgba(0, 240, 255, 0.35);
+
+  --font-display: 'Orbitron', 'Segoe UI', sans-serif;
+  --font-mono: 'Share Tech Mono', 'Consolas', monospace;
+}

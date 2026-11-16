@@ -1,0 +1,10 @@
+[
+  { "id": "m1", "author": "SPIKE",     "text": "Whatever happens, happens.",                               "createdAt": "2024-11-01T10:00:00Z", "likes": 12, "dislikes": 1 },
+  { "id": "m2", "author": "FAYE",      "text": "Космос зовёт. И счёт за топливо тоже.",                    "createdAt": "2024-11-01T10:05:00Z", "likes": 8,  "dislikes": 0 },
+  { "id": "m3", "author": "ED",        "text": "Онлайн. Скучаю. Где все?",                                  "createdAt": "2024-11-01T10:10:00Z", "likes": 21, "dislikes": 2 },
+  { "id": "m4", "author": "JET",       "text": "See you space cowboy...",                                  "createdAt": "2024-11-01T10:15:00Z", "likes": 33, "dislikes": 0 },
+  { "id": "m5", "author": "EIN",       "text": "Гав!",                                                    "createdAt": "2024-11-01T10:20:00Z", "likes": 42, "dislikes": 0 },
+  { "id": "m6", "author": "FATMAN",    "text": "Молись, чтобы не пришлось стрелять.",                      "createdAt": "2024-11-01T10:25:00Z", "likes": 5,  "dislikes": 3 },
+  { "id": "m7", "author": "VICIOUS",   "text": "Ты живёшь в прошлом, а оно уже мертво.",                    "createdAt": "2024-11-01T10:30:00Z", "likes": 14, "dislikes": 6 },
+  { "id": "m8", "author": "JULIA",     "text": "Не все мечты сбываются. Некоторые просто горят.",          "createdAt": "2024-11-01T10:35:00Z", "likes": 19, "dislikes": 1 }
+]

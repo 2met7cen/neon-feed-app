@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEON//FEED</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="glow-bg" aria-hidden="true"></div>
+
+  <header class="app-header">
+    <h1 class="logo" data-text="NEON//FEED">NEON//FEED</h1>
+    <p class="tagline">// transmit your signal to the void</p>
+  </header>
+
+  <main class="app-main">
+    <section class="composer" aria-label="Новое сообщение">
+      <textarea
+        id="composer-input"
+        class="composer__input"
+        maxlength="256"
+        rows="4"
+        placeholder="Введи своё сообщение... (макс. 256 символов)"
+      ></textarea>
+      <div class="composer__footer">
+        <span class="composer__counter">
+          <span id="char-count">0</span>/256
+        </span>
+        <button id="publish-btn" class="btn-publish" disabled>
+          <span>ОТПРАВИТЬ</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="feed" aria-label="Лента сообщений">
+      <div id="feed-list" class="feed__list"></div>
+      <div id="feed-sentinel" class="feed__sentinel"></div>
+      <p id="feed-end" class="feed__end" hidden>// end of transmission //</p>
+    </section>
+  </main>
+
+  <template id="message-template">
+    <article class="message">
+      <header class="message__header">
+        <span class="message__author"></span>
+        <time class="message__time"></time>
+      </header>
+      <p class="message__text"></p>
+      <footer class="message__actions">
+        <button class="reaction reaction--like" data-action="like">
+          <span class="reaction__icon">▲</span>
+          <span class="reaction__count">0</span>
+        </button>
+        <button class="reaction reaction--dislike" data-action="dislike">
+          <span class="reaction__icon">▼</span>
+          <span class="reaction__count">0</span>
+        </button>
+      </footer>
+    </article>
+  </template>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
